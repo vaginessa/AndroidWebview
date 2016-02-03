@@ -70,7 +70,7 @@ public class WebViewDialog extends Dialog implements
 		setContentView(convertView, new LayoutParams(LayoutParams.MATCH_PARENT,
 				LayoutParams.WRAP_CONTENT));
 		Window window = getWindow();
-		window.setGravity(Gravity.TOP);
+		window.setGravity(Gravity.CENTER);
 		// 设置显示动画
 		// 设置dialog占满父容器
 		WindowManager.LayoutParams lp = window.getAttributes();
