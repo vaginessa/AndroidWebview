@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent_all"
+    android:id="@+id/relative"
+    android:clickable="true">
+    <!-- 注意webview设置background无效的情况 -->
+    <WebView android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:id="@+id/wbeview"
+        android:layout_centerInParent="true"/>
+    
+     <ProgressBar 
+         android:id="@+id/loading"
+   		android:layout_width="wrap_content" 
+   		android:layout_height="wrap_content"
+   		android:indeterminateDrawable="@drawable/loading"
+   		android:layout_centerInParent="true" 
+   		android:visibility="gone">
+  </ProgressBar>
+
+</RelativeLayout>
