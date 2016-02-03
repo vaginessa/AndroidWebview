@@ -1,23 +1,21 @@
 package com.example.androidwebview;
 
-import com.example.androidwebview.dialog.WebViewDialog;
-
-import android.content.Intent;
+import android.app.Activity;
 import android.graphics.Bitmap;
 import android.os.Bundle;
-import android.os.Handler;
-import android.support.v7.app.ActionBarActivity;
 import android.view.View;
-import android.view.ViewStub;
 import android.view.View.OnClickListener;
+import android.view.ViewStub;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.Button;
+
+import com.example.androidwebview.dialog.WebViewDialog;
 /**
  * webView的使用
  * 弹出层webview效果
  */
-public class MainActivity extends ActionBarActivity implements OnClickListener{
+public class MainActivity extends Activity implements OnClickListener{
 
 	private Button btn_web;
 	private ViewStub viewStub;
